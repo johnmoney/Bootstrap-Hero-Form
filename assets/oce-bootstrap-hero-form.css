@@ -1,0 +1,19 @@
+/* oce-bootstrap-hero-form.css v1.0 */
+.jumbotron {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.jumbotron textarea {
+  width: 100%;
+  background: unset;
+  border: 1px solid transparent;
+  padding: 0.2em;
+}
+#oce-assetPicker {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

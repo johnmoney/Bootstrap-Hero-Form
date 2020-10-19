@@ -1,0 +1,69 @@
+<!-- bootstrap-hero-form edit.html v1.0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="oce-bootstrap-form">
+  <div class="p-4" id="form-wrapper" style="visibility:hidden;">
+    <!-- sidebar control -->
+    <div class="d-flex flex-row-reverse mb-2">
+      <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="modal" data-target="#sidebar"><i class="fa fa-cog"></i></button>
+    </div>
+
+    <!-- visual composition of form elements -->
+    <div class="jumbotron" id="hero">
+      <button id="oce-assetPicker" type="button" class="btn btn-sm btn-outline-primary"><i class="fa fa-photo"></i></button>
+      <textarea id="headline" rows="1" class="h1 display-4 text-light" placeholder="Hello, world!"></textarea>
+      <textarea id="subheadline" rows="1" class="p lead text-light" placeholder="This is a simple hero unit for calling extra attention to featured content or information."></textarea>
+      <div class="my-4 w-25" id="ctaGroup">
+        <div class="d-flex flex-column">
+          <input id="cta" class="btn btn-primary btn-lg" type="text" placeholder="Learn more">
+          <input id="ctaLink" class="d-none" type="text" placeholder="http://">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sidebar modal -->
+  <div class="modal right fade" id="sidebar" tabindex="-1" aria-labelledby="sidebar" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Content options</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--language -->
+          <div class="form-group" id="system-language">
+            <label class="d-block" for="language">Language</label>
+            <div class="d-flex justify-content-between form-inline">
+              <div id="languagePlaceholder"></div>
+ 
+              <!--non translatable checkbox-->
+              <div class="form-check d-none" id="system-nonTranslatable">
+                <input type="checkbox" class="form-check-input" id="nonTranslatableCheckbox">
+                <label class="form-check-label" for="nonTranslatableCheckbox">Non Translatable</label>
+              </div>
+            </div>
+          </div>
+
+          <!--slug-->
+          <div class="form-group d-none" id="system-slug">
+            <label for="slug">URL slug</label>
+            <input id="slug" class="form-control" type="text" placeholder="Enter the URL slug"
+            data-toggle="tooltip" data-placement="bottom" title='A URL slug is the part that comes at the very end of a URL, and is part of the exact address of a specific page on your site. Keeping your slugs descriptive and concise (3-5 words) can make your content clear and help improve web SEO.'>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="oce-bootstrap-hero-form.js"></script>
+</body>
+</html>

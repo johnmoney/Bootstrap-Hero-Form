@@ -1,0 +1,38 @@
+/* oce-bootstrap-form.css v1.0 */
+.oce-bootstrap-form .tooltip-inner {
+  max-width: 400px;
+}
+.oce-bootstrap-form .modal.right .modal-dialog {
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+.oce-bootstrap-form .modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 500px;
+  max-width: 100%;
+  height: 100%;
+}
+.oce-bootstrap-form .modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+.oce-bootstrap-form .modal.right .modal-body {
+  padding: 15px 15px 80px;
+}
+.oce-bootstrap-form .modal.right.fade .modal-dialog {
+  right: -500px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+.oce-bootstrap-form .modal.right.fade.show .modal-dialog {
+  right: 0;
+}
+.oce-bootstrap-form .modal.right .modal-content {
+  border-radius: 0;
+  border: none;
+}
